@@ -15,9 +15,9 @@ util.registComp(option, addressPicker, {
   },
   onLoad() {
     this.setAddressPickerValue(
-      { code: '110000', name: '北京' },
-      { code: '110100', name: '北京' },
-      { name: '丰台', code: '110105' }
+      { code: '110000', name: '省' },
+      { code: '110100', name: '市' },
+      { name: '区', code: '110101' }
     )
   }
 })
