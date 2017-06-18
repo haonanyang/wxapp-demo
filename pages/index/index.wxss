@@ -1,0 +1,2 @@
+/**index.wxss**/
+@import "../address_picker/index.wxss";

@@ -1,0 +1,20 @@
+<view wx:if="{{addressPicker.show}}" class="cascade_box">
+  <view class="cascade_hei" animation="{{addressPicker.animationData.fadeAnim}}"></view>
+  <view class="cascade_find" animation="{{addressPicker.animationData.showAnim}}">
+    <view class="cascade_header">
+      <text class='quxiao' catchtap="cancelPicker">取消</text>
+      <text class="queren" catchtap="onAddressPick">确认</text>
+    </view>
+    <picker-view value="{{addressPicker.defaultValue}}" indicator-style="height: 80rpx;font-size: 38rpx" style="width: 100%; height: 400rpx;" bindchange="bindChange">
+      <picker-view-column class="pvc">
+        <view wx:for="{{addressPicker.provinces}}" wx:key='this' style="line-height: 80rpx;text-align:center;">{{item.name}}</view>
+      </picker-view-column>
+      <picker-view-column class="pvc">
+        <view wx:for="{{addressPicker.cities}}" wx:key='this' style="line-height: 80rpx;text-align:center;">{{item.name}}</view>
+      </picker-view-column>
+      <picker-view-column class="pvc">
+        <view wx:for="{{addressPicker.areas}}" wx:key='this' style="line-height: 80rpx;text-align:center;">{{item.name}}</view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+</view>
