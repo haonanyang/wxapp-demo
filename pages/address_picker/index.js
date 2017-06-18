@@ -211,26 +211,6 @@ export default {
   },
 
   onLoad:function(){
-    // var that=this;
-    // wx.request({
-    // url: 'https://wxxapp.duapp.com/quanguo.json',
-    // data: {},
-    // method: 'GET',
-    // success: function(res){
-    // console.log(res.data.regions);
-    // that.setData({
-    // regions:res.data.regions
-    // });
-    // 　　　　　　
-    // that.initAddressPicker();
-
-
-
-    // },
-    // fail: function() {
-    // },
-    // complete: function() {
-    // }
-    // })
+   
   }
 };
